@@ -8,8 +8,8 @@
     },
     "homepage": "https://github.com/xeeo/service-structure#readme",
     "scripts": {
-        "start": "nodemon app/service.js",
-        "debug": "nodemon --debug app/service.js",
+        "start": "nodemon service.js",
+        "debug": "nodemon --debug service.js",
         "test": "mocha test/**/*.mocha.js"
     },
     "repository": {

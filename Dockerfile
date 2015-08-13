@@ -12,8 +12,12 @@ RUN mkdir $HOME/logs
 RUN mkdir $HOME/files
 WORKDIR $SERVICE_HOME
 
+ADD ./package.json $SERVICE_HOME/package.json
+
 RUN npm install
 RUN mv node_modules ../
+
+ADD . $SERVICE_HOME
 
 # Port 3000 for server
 EXPOSE 3000

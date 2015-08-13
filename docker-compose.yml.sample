@@ -1,11 +1,10 @@
 service:
- image: node:0.10
+ build: .
  volumes:
-  - src:/service
-  - logs:/service/logs
-  - files:/service/files
+  - src:/home/service
+  - logs:/home/logs
+  - files:/home/files
  ports:
-  - "52022:22"
   - "3000:3000"
   - "5858:5858"
  environment:
