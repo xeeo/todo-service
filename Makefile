@@ -1,7 +1,7 @@
 CURRENT_DIRECTORY := $(shell pwd)
 
 start:
-	@docker-compose up -d
+	@docker-compose up
 
 clean:
 	@docker-compose rm --force

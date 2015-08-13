@@ -7,13 +7,9 @@
         "url": "https://github.com/xeeo/service-structure/issues"
     },
     "homepage": "https://github.com/xeeo/service-structure#readme",
-    "main": "app/src/service.js",
-    "engines": {
-        "node": "~0.10.28",
-        "npm": "~1.4.28"
-    },
     "scripts": {
-        "start": "forever src/service.js",
+        "start": "nodemon app/service.js",
+        "debug": "nodemon --debug app/service.js",
         "test": "mocha test/**/*.mocha.js"
     },
     "repository": {
